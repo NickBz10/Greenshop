@@ -1,9 +1,102 @@
-*{
-    padding: 0;
-    margin: 0;
-}
-
-.container{
-    max-width: 1200px;
-    margin:auto;
+*{ 
+    padding: 0; 
+    margin: 0; 
+} 
+ 
+.form-container { 
+    max-width: 500px; 
+    margin: auto; 
+    background-color: #ffffff; 
+    padding: 20px; 
+    font-family: Arial, sans-serif; 
+    text-align: center; 
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); 
+} 
+ 
+.form-title{ 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 27px; 
+    font-size: 20px; 
+} 
+ 
+.form-title_first{ 
+    margin-top: 52px; 
+    margin-bottom: 40px; 
+    color: #3D3D3D; 
+} 
+ 
+.form-title_second{ 
+    margin-top: 52px; 
+    margin-bottom: 40px; 
+    color: #46A358; 
+} 
+ 
+.form_dscr{ 
+    text-align: center; 
+    font-size: 13px; 
+    margin-bottom: 14px; 
+    color: #3D3D3D; 
+} 
+ 
+input[type="text"], 
+input[type="email"], 
+input[type="password"] { 
+    width: 300px; 
+    height: 40px; 
+    padding: 12px; 
+    margin: 10px 0; 
+    border: 1px solid #EAEAEA; 
+    border-radius: 5px; 
+    box-sizing: border-box; 
+    margin-bottom: 16px; 
+} 
+ 
+.register_btn{ 
+    background-color: #46A358; 
+    color: #ffffff;  
+    text-align: center;  
+    width: 300px;  
+    height: 45px;  
+    margin-bottom: 36px; 
+    border-radius: 5px; 
+    border: 1px solid #EAEAEA; 
+    box-sizing: border-box; 
+    cursor: pointer; 
+} 
+ 
+p{ 
+    text-align: center; 
+    font-size: 13px; 
+    margin-bottom: 27px; 
+    color: #3D3D3D; 
+} 
+ 
+.btn_google{ 
+    display: block; 
+    margin-left: 100px; 
+    width: 300px; 
+    height: 40px; 
+    padding: 10px; 
+    border: 1px solid #EAEAEA; 
+    border-radius: 5px; 
+    box-sizing: border-box; 
+    text-align: center; 
+    cursor: pointer; 
+    margin-bottom: 15px; 
+ 
+} 
+ 
+.btn_facebook{ 
+    display: block; 
+    margin-left: 100px; 
+    width: 300px; 
+    height: 40px; 
+    padding: 10px; 
+    border: 1px solid #EAEAEA; 
+    border-radius: 5px; 
+    box-sizing: border-box; 
+    text-align: center; 
+    cursor: pointer; 
 }
