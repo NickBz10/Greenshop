@@ -1,8 +1,23 @@
+@font-face {
+    font-family: 'fontspring_demo_-_cera_proRg';
+    src: url('../fonts/fontspring-demo-cerapro-regular-webfont.eot');
+    src: url('../fonts/fontspring-demo-cerapro-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/fontspring-demo-cerapro-regular-webfont.woff2') format('woff2'),
+         url('../fonts/fontspring-demo-cerapro-regular-webfont.woff') format('woff'),
+         url('../fonts/fontspring-demo-cerapro-regular-webfont.ttf') format('truetype'),
+         url('../fonts/fontspring-demo-cerapro-regular-webfont.svg#fontspring_demo_-_cera_proRg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 *{ 
     padding: 0; 
     margin: 0; 
 } 
- 
+
+/* Форма регистрации */
+
 .form-container{ 
     max-width: 500px; 
     margin: auto; 
@@ -101,6 +116,8 @@ input[type="password"] {
     cursor: pointer; 
 }
 
+/* Домашняя страница */
+
 .container{
     max-width: 1200px; 
     margin: auto;
@@ -122,7 +139,7 @@ header nav ul{
 }
 
 header nav ul li a{
-    font-family: "Cera Pro", sans-serif;
+    font-family: 'fontspring_demo_-_cera_proRg', sans-serif;
     font-weight: 400;
     font-size: 16px;
     color: #3d3d3d;
@@ -135,7 +152,7 @@ header .login{
     padding: 7px 17px;
     display: flex;
     align-items: center;
-    font-family: "Cera Pro", sans-serif;
+    font-family: 'fontspring_demo_-_cera_proRg', sans-serif;
     font-weight: 500;
     font-size: 16px;
     color: #fff;
@@ -166,7 +183,7 @@ stroke: #46A358;
 }
 
 .title_four{
-    font-family: "Cera Pro", sans-serif;
+    font-family: 'fontspring_demo_-_cera_proRg', sans-serif;
     font-weight: 500;
     font-size: 14px;
     line-height: 114%;
@@ -178,7 +195,7 @@ stroke: #46A358;
 }
 
 .title_one{
-    font-family: "Cera Pro", sans-serif;
+    font-family: 'fontspring_demo_-_cera_proRg', sans-serif;
     font-weight: 900;
     font-size: 70px;
     line-height: 100%;
@@ -188,7 +205,7 @@ stroke: #46A358;
 }
 
 .planet{
-    font-family: "Cera Pro", sans-serif;
+    font-family: 'fontspring_demo_-_cera_proRg', sans-serif;
     font-weight: 900;
     font-size: 70px;
     line-height: 100%;
@@ -198,7 +215,7 @@ stroke: #46A358;
 }
 
 .title_description{
-    font-family: "Cera Pro", sans-serif;
+    font-family: 'fontspring_demo_-_cera_proRg', sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 171%;
@@ -210,8 +227,8 @@ stroke: #46A358;
     background: #46a358;
     border-radius: 6px;
     padding: 10px 26px;
-    font-family: "Cera Pro", sans-serif;
-    font-weight: 700;
+    font-family: 'fontspring_demo_-_cera_proRg', sans-serif;
+    font-weight: 500;
     font-size: 16px;
     line-height: 125%;
     text-transform: uppercase;
@@ -222,4 +239,119 @@ stroke: #46A358;
 .shop_now_btn:hover{
     background-color: white;
     color: #46a358;
+}
+
+/* Каталог */
+
+.catalog {
+    max-width: 1200px; 
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sidebar {
+    width: 310px;
+    padding: 20px;
+}
+
+.sidebar h3 {
+    font-family: 'fontspring_demo_-_cera_proRg', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 89%;
+    color: #3d3d3d;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    font-family: 'fontspring_demo_-_cera_proRg', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 267%;
+    margin-bottom: 300px;
+}
+
+.sidebar li a {
+    text-decoration: none;
+    color: #3d3d3d;
+
+}
+
+.sidebar li a:hover{
+    background-color: #ffffff;
+    color: #46a358;
+}
+
+.products {
+    width: 840px;
+    padding: 20px;
+}
+
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 31px;
+    font-family: 'fontspring_demo_-_cera_proRg', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    color: #3d3d3d;
+}
+
+.top-nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.top-nav li a {
+    text-decoration: none;
+    color: #333;
+    margin-right: 38px;
+}
+
+.top-nav li a:hover{
+    background-color: #ffffff;
+    color: #46a358;
+}
+
+.product-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.product-item {
+    font-family: 'fontspring_demo_-_cera_proRg', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    color: #3d3d3d;
+    padding: 20px;
+    max-width: 258px;
+}
+
+.product-item img {
+    width: 250px;
+    height: 250px;
+    margin-bottom: 31px;
+}
+
+.product-item h3 {
+    margin-bottom: 6px;
+    font-family: 'fontspring_demo_-_cera_proRg', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    color: #3d3d3d;
+    text-align: left;
+}
+
+.product-item p {
+    font-family: 'fontspring_demo_-_cera_proRg', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 89%;
+    color: #46a358;
+    text-align: left;
 }
