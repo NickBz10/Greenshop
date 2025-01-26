@@ -244,15 +244,12 @@ stroke: #46A358;
 /* Каталог */
 
 .catalog {
-    max-width: 1200px; 
-    margin: auto;
     display: flex;
     justify-content: space-between;
 }
 
 .sidebar {
-    width: 310px;
-    padding: 20px;
+    max-width: 310px;
 }
 
 .sidebar h3 {
@@ -283,9 +280,12 @@ stroke: #46A358;
     color: #46a358;
 }
 
+.sidebar img {
+    margin-left: -35px;
+}
+
 .products {
-    width: 840px;
-    padding: 20px;
+    max-width: 840px;
 }
 
 .top-nav {
@@ -327,7 +327,6 @@ stroke: #46A358;
     font-size: 16px;
     line-height: 100%;
     color: #3d3d3d;
-    padding: 20px;
     max-width: 258px;
 }
 
@@ -355,3 +354,4 @@ stroke: #46A358;
     color: #46a358;
     text-align: left;
 }
+
