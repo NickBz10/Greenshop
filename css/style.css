@@ -355,3 +355,150 @@ stroke: #46A358;
     text-align: left;
 }
 
+.pagination {
+    display: flex;
+    flex-direction: row;
+    text-align: right; 
+}
+
+/* Блог */
+
+.blog-posts .container {
+    display: block;
+}
+
+.product_info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 138px;
+}
+
+.info {
+    max-width: 586px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+}
+
+.info_title{
+    font-family: 'fontspring_demo_-_cera_proRg', sans-serif;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 133%;
+    text-transform: uppercase;
+    text-align: right;
+    color: #3d3d3d;
+    margin-bottom: 9px;
+}
+
+.info_description{
+    font-family: 'fontspring_demo_-_cera_proRg', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 171%;
+    text-align: right;
+    color: #727272;
+    margin-bottom: 25px;
+}
+
+.btn_find_more{
+    background: #46a358;
+    border-radius: 6px;
+    padding: 10px 28px;
+    font-family: 'fontspring_demo_-_cera_proRg', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 143%;
+    text-decoration: none;
+    color: #fff;
+}
+
+.btn_find_more svg {
+    align-items: end;
+}
+
+.blog-post_title{
+    font-family: 'fontspring_demo_-_cera_proRg', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 53%;
+    text-align: center;
+    color: #3d3d3d;
+    margin-bottom: 15px;
+}
+
+.blog-post_description{
+    font-family: 'fontspring_demo_-_cera_proRg', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 171%;
+    text-align: center;
+    color: #727272;
+    margin-bottom: 35px;
+}
+
+.post-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.post {
+    max-width: 268px;
+    margin-bottom: 9px;
+}
+
+.post-content {
+    max-width: 242px;
+}
+
+.post-content_description_one {
+    font-family: 'fontspring_demo_-_cera_proRg', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 114%;
+    color: #46a358;
+    margin-bottom: 4px;
+}
+
+.post-content_title {
+    font-family: 'fontspring_demo_-_cera_proRg', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 130%;
+    color: #3d3d3d;
+    margin-bottom: 4px;
+}
+
+.post-content_description_two {
+    font-family: 'fontspring_demo_-_cera_proRg', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 157%;
+    color: #727272;
+    margin-bottom: 9px;
+}
+
+.read-more{
+    font-family: 'fontspring_demo_-_cera_proRg', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 114%;
+    color: #3d3d3d;
+    text-decoration: none;
+}
+
+.read-more svg {
+    margin-left: 3px;
+}
+
+.read-more svg path{
+    transition: 0,4s;
+}
+
+.read-more:hover {
+    color: #46a358;
+}
+
+.read-more:hover svg path{
+    stroke: #46A358;
+}
