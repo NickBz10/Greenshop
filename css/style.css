@@ -372,11 +372,23 @@ stroke: #46A358;
     position: relative;
 }
 
-.product-choice {
-    display: inline-block;
+.product-item ul {
+    display: flex;
     position: absolute;
-    left: 50%;
-    top: 75%;
+    left: 26%;
+    top: 77%;
+    gap: 26px;
+    opacity: 0,1;
+    transition: 0.5s;
+}
+
+.product-item ul li a:hover {
+    background-color: #fbfbfb;
+    opacity: 1;
+}
+
+.product-item ul li a:hover svg path {
+    fill: #46a358;
 }
 
 .product-item img {
