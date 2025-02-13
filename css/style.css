@@ -373,8 +373,10 @@ stroke: #46A358;
 }
 
 .product-choice {
-    display: flex;
-    justify-content: space-around;
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    top: 75%;
 }
 
 .product-item img {
