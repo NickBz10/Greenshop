@@ -378,7 +378,7 @@ stroke: #46A358;
     left: 26%;
     top: 77%;
     gap: 26px;
-    opacity: 0;
+    opacity: 0,1;
     transition: 0.5s;
 }
 
