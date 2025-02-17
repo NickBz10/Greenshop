@@ -209,6 +209,48 @@ header nav ul li.drop:hover .dropdown {
     display: block;
 }
 
+header nav ul li .dropdown li {
+    position: relative;
+}
+
+header nav ul li .dropdown li .second_dropdown {
+    display: none;
+    list-style: none;
+    position: absolute;
+    top: -111px;
+    left: 218px;
+}
+
+header nav ul li .dropdown li .second_dropdown a:before {
+    display: none;
+}
+
+header nav ul li .dropdown li .second_dropdown a {
+    padding: 8px 14px;
+    min-width: 188px;
+    display: inline-block;
+    background: #edf6ee;
+    font-family: 'fontspring_demo_-_cera_proRg', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #3d3d3d;
+    line-height: 20px;
+    transition: 0,3s;
+}
+
+header nav ul li .dropdown li .second_dropdown a:hover {
+    background-color: #1a712a;
+    color: white;
+}
+
+header nav ul li .dropdown li .second_dropdown li a:after {
+    background-image: none;
+}
+
+header nav ul li.drop .dropdown li.second_drop:hover .second_dropdown {
+    display: block;
+}
+
 header .login{
     background: #46a358;
     border-radius: 6px;
