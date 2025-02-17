@@ -1,0 +1,43 @@
+@media only screen and (max-width: 600px) {
+    header nav{
+        margin-left: 0;
+    }
+    header nav ul {
+        gap: 10px;
+    }
+    header nav{
+        display: none;
+    }
+    .container {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .banner article {
+        max-width: 557px;
+    }
+    .banner article img {
+        width: 100%;
+    }
+    .catalog .container {
+        display: block;
+    }
+    .sidebar {
+        width: 100%;
+    }
+    .product-list article {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    
+}
+
+@media only screen and (max-width: 360px) {
+    
+}
+
+@media only screen and (max-width: 320px) {
+    
+}

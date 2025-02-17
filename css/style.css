@@ -153,6 +153,62 @@ header nav ul li a:hover{
     border-bottom: solid 1px #46A358;
 }
 
+header nav ul li {
+    position: relative;
+}
+
+header nav ul li .dropdown {
+    display: none;
+    list-style: none;
+    position: absolute;
+    top: 10px;
+    left: -60px;
+    padding-top: 40px;
+}
+
+header nav ul li .dropdown a:before {
+    display: none;
+}
+
+header nav ul li .dropdown a {
+    padding: 8px 14px;
+    min-width: 188px;
+    display: inline-block;
+    background: #edf6ee;
+    font-family: 'fontspring_demo_-_cera_proRg', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #3d3d3d;
+    line-height: 20px;
+    transition: 0,3s;
+    position: relative;
+}
+
+header nav ul li .dropdown a:hover {
+    background-color: #1a712a;
+    color: white;
+}
+
+header nav li .dropdown li:last-of-type a:after {
+    content: "";
+    display: inline-block;
+    width: 7px;
+    height: 10px;
+    position: absolute;
+    right: 17px;
+    top: 12px;
+    background-image: url("../img/arrow.svg");
+}
+
+header nav ul li .dropdown a:hover:after {
+    background-image: url("../img/arrow_hover.svg");
+    transform: rotate(180deg);
+}
+
+header nav ul li.drop:hover .dropdown {
+    display: block;
+}
+
 header .login{
     background: #46a358;
     border-radius: 6px;
@@ -250,9 +306,10 @@ stroke: #46A358;
 
 /* Каталог */
 
-.catalog {
+.catalog .container {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
 }
 
 .sidebar {
@@ -290,8 +347,8 @@ stroke: #46A358;
 }
 
 .sidebar img {
-    max-width: 310px;
-    margin-left: -35px;
+    max-width: 370px;
+    margin-left: -30px;
 }
 
 .products {
@@ -378,11 +435,11 @@ stroke: #46A358;
     left: 26%;
     top: 77%;
     gap: 26px;
-    opacity: 0,1;
+    opacity: 0;
     transition: 0.5s;
 }
 
-.product-item ul li a:hover {
+.product-item:hover ul {
     background-color: #fbfbfb;
     opacity: 1;
 }
@@ -449,7 +506,7 @@ stroke: #46A358;
 }
 
 .pagination:hover svg path {
-    stroke:#fff
+    stroke:#3d3d3d;
 }
 
 /* Блог */
