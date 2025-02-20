@@ -708,3 +708,186 @@ stroke: #46A358;
 .read-more:hover svg path{
     stroke: #46A358;
 }
+
+/* Уход за садом */
+
+.garden_care .container {
+    background: #fbfbfb;
+    margin-bottom: 24px;
+}
+
+.care {
+    max-width: 204px;
+}
+
+.care img {
+    margin-bottom: 15px;
+}
+
+.care h3 {
+    font-family: 'fontspring_demo_-_cera_proRg', sans-serif;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 94%;
+    color: #3d3d3d;
+    margin-bottom: 9px;
+}
+
+.care p {
+    font-family: 'fontspring_demo_-_cera_proRg', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 157%;
+    color: #727272;
+}
+
+.join {
+    max-width: 354px;
+}
+
+.join h3 {
+    font-family: 'fontspring_demo_-_cera_proRg', sans-serif;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 94%;
+    color: #3d3d3d;
+    margin-bottom: 25px;
+}
+.join form {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    max-width: 354px;
+    height: 40px;
+    box-sizing: border-box;
+    border-radius: 6px 0 0 6px;
+    background: #fff;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.06);
+    margin-bottom: 18px;
+}
+
+.join input {
+    width: 269px;
+    height: 40px;
+    border: none;
+    outline: none;
+    padding-bottom: 8px;
+    background: transparent;
+    font-family: 'fontspring_demo_-_cera_proRg', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 114%;
+    color: #acacac;
+}
+
+.join button {
+    width: 85px;
+    height: 40px;
+    border: none;
+    border-radius: 0 6px 6px 0;
+    font-family: 'fontspring_demo_-_cera_proRg', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 89%;
+    color: #fff;
+    background: #46a358;
+    cursor: pointer;
+}
+
+.join button:hover {
+    background-color: white;
+    color: #46a358;
+}
+
+.join p {
+    font-family: 'fontspring_demo_-_cera_proRg', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 157%;
+    color: #727272;
+}
+
+/* Подвал */
+
+footer .container {
+    display: block;
+    background: #fbfbfb;
+}
+
+.contact_info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 23px 0 22px;
+    width: 1200px;
+    height: 88px;
+    background: linear-gradient(90deg, #edf6ef 0%, #52c368 100%);
+    margin-bottom: 33px;
+}
+
+.contact_info a {
+    font-family: 'fontspring_demo_-_cera_proRg', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 157%;
+    color: #3d3d3d;
+    display: inline-flex;
+    align-items: center;
+    text-align: start;
+    text-decoration: none;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 35px;
+}
+
+.roadmap ul li:first-of-type {
+    font-family: 'fontspring_demo_-_cera_proRg', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 89%;
+    color: #3d3d3d;
+    margin-bottom: 8px;
+}
+
+.roadmap ul li a {
+    font-family: 'fontspring_demo_-_cera_proRg', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 214%;
+    color: #3d3d3d;
+    text-decoration: none;
+}
+
+.roadmap ul li a:hover{
+    background-color: #ffffff;
+    color: #46a358;
+}
+
+.social-media h3 {
+    font-family: 'fontspring_demo_-_cera_proRg', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 89%;
+    color: #3d3d3d;
+    margin-bottom: 20px;
+}
+
+.social-media ul {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 33px;
+}
+
+footer p {
+    text-align: center;
+    font-family: 'fontspring_demo_-_cera_proRg', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 214%;
+    color: #3d3d3d;
+}
