@@ -131,6 +131,11 @@ header{
     padding-top: 30px;
 }
 
+header .container {
+    padding-bottom: 18px;
+    border-bottom: 1px solid rgba(70, 163, 88, 0.1);
+}
+
 header nav ul{
     display: flex;
     align-items: center;
@@ -249,6 +254,11 @@ header nav ul li .dropdown li .second_dropdown li a:after {
 
 header nav ul li.drop .dropdown li.second_drop:hover .second_dropdown {
     display: block;
+}
+
+.desktop_control {
+    display: flex;
+    gap: 29px;
 }
 
 header .login{
@@ -424,6 +434,32 @@ stroke: #46A358;
     background-color: #ffffff;
     color: #46a358;
     border-bottom: solid 1px #46A358;
+}
+
+.sort {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    font-family: 'fontspring_demo_-_cera_proRg', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    color: #3d3d3d;
+}
+
+.sort select {
+    border: none;
+    outline: none;
+    font-family: 'fontspring_demo_-_cera_proRg', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    color: #3d3d3d;
+}
+
+.sort select:hover {
+    background-color: #ffffff;
+    color: #46a358;
 }
 
 .product-list {
@@ -718,6 +754,8 @@ stroke: #46A358;
 
 .care {
     max-width: 204px;
+    border-right: 1px solid rgba(70, 163, 88, 0.1);
+    padding-right: 30px;
 }
 
 .care img {
@@ -843,6 +881,8 @@ footer .container {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 35px;
+    border-bottom: 1px solid rgba(70, 163, 88, 0.1);
+    padding-bottom: 27px;
 }
 
 .roadmap ul li:first-of-type {
