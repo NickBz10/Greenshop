@@ -14,7 +14,39 @@
 *{ 
     padding: 0; 
     margin: 0; 
-} 
+}
+
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
+   
+  .spinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid #cccccc;
+    border-top-color: #46A358;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+  }
+   
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+      animation-duration: 5s;
+    }
+    100% {
+      transform: rotate(360deg);
+      animation-duration: 5s;
+    }
+  }
 
 /* Форма регистрации */
 
@@ -26,32 +58,61 @@
     font-family: Arial, sans-serif; 
     text-align: center; 
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); 
-} 
+}
+
+.close {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 21px;
+}
+
+.close svg path{
+    transition: 0,4s;
+}
+
+.close:hover {
+    color: #46a358;
+}
+
+.close:hover svg path{
+    stroke: #46A358;
+}
  
 .form-title{ 
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 27px; 
-    font-size: 20px; 
 } 
  
 .form-title_first{ 
-    margin-top: 52px; 
-    margin-bottom: 40px; 
-    color: #3D3D3D; 
+    margin-top: 52px;
+    margin-bottom: 40px;
+    font-family: 'fontspring_demo_-_cera_proRg', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 80%;
+    color: #3d3d3d;
 } 
  
-.form-title_second{ 
+.form-title_first span{ 
     margin-top: 52px; 
-    margin-bottom: 40px; 
+    margin-bottom: 40px;
+    font-family: 'fontspring_demo_-_cera_proRg', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 80%; 
     color: #46A358; 
 } 
  
 .form_dscr{ 
     text-align: center; 
     font-size: 13px; 
-    margin-bottom: 14px; 
+    margin-bottom: 14px;
+    font-family: 'fontspring_demo_-_cera_proRg', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 123%;
     color: #3D3D3D; 
 } 
  
@@ -65,55 +126,133 @@ input[type="password"] {
     border: 1px solid #EAEAEA; 
     border-radius: 5px; 
     box-sizing: border-box; 
-    margin-bottom: 16px; 
-} 
+    outline: none;
+    margin-bottom: 16px;
+    font-family: 'fontspring_demo_-_cera_proRg', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 114%;
+    color: #a5a5a5;
+}
+
+.password {
+    position: relative;
+}
+
+.password_control {
+    display: inline-block;
+    overflow: hidden;
+    width: 18px;
+    height: 16px;
+    position: absolute;
+    top: 20px;
+    right: 115px;
+    background-image: url(../img/eye.svg);
+}
  
 .register_btn{ 
     background-color: #46A358; 
     color: #ffffff;  
     text-align: center;  
     width: 300px;  
-    height: 45px;  
+    height: 45px;
+    font-family: 'fontspring_demo_-_cera_proRg', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+    color: #fff; 
     margin-bottom: 36px; 
     border-radius: 5px; 
     border: 1px solid #EAEAEA; 
     box-sizing: border-box; 
     cursor: pointer; 
-} 
+}
+
+.register_btn:hover{
+    background-color: white;
+    color: #46a358;
+}
  
 .register_with{ 
     text-align: center; 
     font-size: 13px; 
-    margin-bottom: 27px; 
-    color: #3D3D3D; 
-} 
+    margin-bottom: 27px;
+    font-family: 'fontspring_demo_-_cera_proRg', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 123%;
+    color: #3D3D3D;
+}
+
+.register_with:before {
+    content: "";
+    display: inline-block;
+    align-items: center;
+    border: 1px solid;
+    width: 97px;
+    height: 0px;
+    color: #eaeaea;
+    margin-right: 6px;
+    margin-bottom: 3px;
+}
+
+.register_with:after {
+    content: "";
+    display: inline-block;
+    align-items: center;
+    border: 1px solid;
+    width: 97px;
+    height: 0px;
+    color: #eaeaea;
+    margin-left: 6px;
+    margin-bottom: 3px;
+}
  
-.btn_google{ 
-    display: block; 
-    margin-left: 100px; 
+.btn_google { 
+    display: block;
     width: 300px; 
-    height: 40px; 
-    padding: 10px; 
+    height: 40px;
+    margin-left: 100px; 
+    font-family: 'fontspring_demo_-_cera_proRg', sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 123%;
+    color: #727272;
+    text-decoration: none;
+    padding-top: 8px;
     border: 1px solid #EAEAEA; 
     border-radius: 5px; 
     box-sizing: border-box; 
-    text-align: center; 
     cursor: pointer; 
-    margin-bottom: 15px; 
+    margin-bottom: 15px;
+}
+
+.btn_google img {
+    margin-bottom: -5px;
+    margin-right: 9px;
+}
  
-} 
- 
-.btn_facebook{ 
-    display: block; 
-    margin-left: 100px; 
+.btn_facebook { 
+    display: block;
     width: 300px; 
-    height: 40px; 
-    padding: 10px; 
+    height: 40px;
+    margin-left: 100px; 
+    font-family: 'fontspring_demo_-_cera_proRg', sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 123%;
+    color: #727272;
+    text-decoration: none;
+    padding-top: 8px;
     border: 1px solid #EAEAEA; 
     border-radius: 5px; 
     box-sizing: border-box; 
-    text-align: center; 
     cursor: pointer; 
+}
+
+.btn_facebook img {
+    margin-bottom: -5px;
+    margin-right: 4px;
 }
 
 /* Домашняя страница */
@@ -392,13 +531,14 @@ stroke: #46A358;
 }
 
 .sidebar li a {
+    display: flex;
+    justify-content: space-between;
     text-decoration: none;
     color: #3d3d3d;
 
 }
 
 .sidebar li a:hover{
-    background-color: #ffffff;
     color: #46a358;
 }
 
