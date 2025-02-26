@@ -38,18 +38,16 @@
     animation: spin 5s forwards;
   }
 
-  .preloader.none {
+  .preloader:after {
     display: none;
   }
    
   @keyframes spin {
     0% {
       transform: rotate(0deg);
-      opacity: 1;
     }
     100% {
       transform: rotate(360deg);
-      opacity: 0;
     }
   }
 
