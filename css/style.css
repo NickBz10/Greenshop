@@ -17,11 +17,12 @@
 }
 
 .preloader {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
+    backdrop-filter: blur(3px);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -34,17 +35,21 @@
     border: 5px solid #cccccc;
     border-top-color: #46A358;
     border-radius: 50%;
-    animation: spin 1s linear infinite;
+    animation: spin 5s forwards;
+  }
+
+  .preloader.none {
+    display: none;
   }
    
   @keyframes spin {
     0% {
       transform: rotate(0deg);
-      animation-duration: 5s;
+      opacity: 1;
     }
     100% {
       transform: rotate(360deg);
-      animation-duration: 5s;
+      opacity: 0;
     }
   }
 
