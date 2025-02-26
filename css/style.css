@@ -35,7 +35,7 @@
     border: 5px solid #cccccc;
     border-top-color: #46A358;
     border-radius: 50%;
-    animation: spin 5s forwards;
+    animation: spin 5s infinite;
   }
 
   .preloader:after {
