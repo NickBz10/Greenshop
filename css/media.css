@@ -157,6 +157,18 @@
     .post-list{
         justify-content: center;
     }
+    .join{
+        width: 300px;
+    }
+    .join form {
+        width: 300px;
+    }
+    .join input {
+        width: 228px;
+    }
+    .join button {
+        width: 72px;
+    }
     .form-container {
         box-shadow: none;
         width: 100%;
